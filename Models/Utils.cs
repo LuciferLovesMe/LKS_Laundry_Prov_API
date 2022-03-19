@@ -23,6 +23,7 @@ namespace LKS_Laundry_Prov_API.Models
         public string name { set; get; }
         public string username { set; get; }
         public string password { set; get; }
+        public string phone { set; get; }
     }
 
     public class Model

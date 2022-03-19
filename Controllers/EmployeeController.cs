@@ -15,7 +15,7 @@ namespace LKS_Laundry_Prov_API.Controllers
         [HttpPost]
         public IHttpActionResult result(Utils u)
         {
-            string query = "select * from employee where email_employee '" + u.username + "' and password_employee = '" + u.password + "'";
+            string query = "select * from employee where email_employee = '" + u.username + "' and password_employee = '" + u.password + "'";
             var user = row.Employees.SqlQuery(query).FirstOrDefault();
             if(user != null)
             {
